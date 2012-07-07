@@ -4,7 +4,7 @@ This module contains utilities for handling and transforming file
 paths.  Almost all these methods perform only string transformations.
 The file system is not consulted to check whether paths are valid.
 
-`fs.exists` and `path.existsSync` are the exceptions, and should
+`fs.exists` and `fs.existsSync` are the exceptions, and should
 logically be found in the fs module as they do access the file system.
 
 Use `require('path')` to use this module.  The following methods are provided:
@@ -150,6 +150,6 @@ Then call the `callback` argument with either true or false.  Example:
     });
 
 
-### path.existsSync(p)
+### fs.existsSync(p)
 
 Synchronous version of `fs.exists`.
